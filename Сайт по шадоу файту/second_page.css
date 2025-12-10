@@ -1,4 +1,4 @@
-/* Основні стилі */
+/* Стилі для контейнера */
 
 body {
     font-family: Arial, sans-serif;
@@ -15,25 +15,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
     text-align: center;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.input-section {
-    margin-bottom: 15px;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 300px;
 }
 
 button {
@@ -50,8 +33,13 @@ button:hover {
     background-color: #45a049;
 }
 
-#result {
+#dogContainer {
     margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
+}
+
+#dogContainer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
