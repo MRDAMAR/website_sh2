@@ -1,48 +1,48 @@
-/* Базові стилі */
+/* Основні стилі */
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
 .container {
-    max-width: 600px;
-    margin: 50px auto;
+    background-color: #fff;
     padding: 20px;
-    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-label {
-    font-weight: bold;
+.input-section {
+    margin-bottom: 15px;
 }
 
 input {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 button {
-    padding: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -52,21 +52,6 @@ button:hover {
 
 #result {
     margin-top: 20px;
-    background-color: #f1f1f1;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-#result p {
-    font-size: 1.2rem;
-}
-
-#result p:nth-child(odd) {
-    color: #28a745;
-    /* зелене для правильних даних */
-}
-
-#result p:nth-child(even) {
-    color: #dc3545;
-    /* червоне для неправильних даних */
+    font-size: 18px;
+    font-weight: bold;
 }
