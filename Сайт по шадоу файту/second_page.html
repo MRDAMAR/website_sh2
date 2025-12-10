@@ -4,30 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Порівняння слів</title>
+    <title>Отримання картинки з API</title>
     <link rel="stylesheet" href="second_page.css">
 </head>
 
 <body>
 
     <div class="container">
-        <h1>Порівняння спільних слів</h1>
+        <h1>Отримати випадкову картинку собаки</h1>
 
-        <!-- Форма для введення фраз -->
-        <div class="input-section">
-            <label for="phraseInput1">Введіть першу фразу:</label>
-            <input type="text" id="phraseInput1" placeholder="Введіть першу фразу">
-        </div>
+        <!-- Кнопка для запиту картинки -->
+        <button id="getDogBtn">Показати картинку</button>
 
-        <div class="input-section">
-            <label for="phraseInput2">Введіть другу фразу:</label>
-            <input type="text" id="phraseInput2" placeholder="Введіть другу фразу">
-        </div>
-
-        <button id="compareButton">Порівняти</button>
-
-        <!-- Місце для результатів -->
-        <div id="result"></div>
+        <!-- Місце для відображення картинки -->
+        <div id="dogContainer"></div>
     </div>
 
     <script src="script.js"></script>
