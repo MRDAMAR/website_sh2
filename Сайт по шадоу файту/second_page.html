@@ -3,25 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>JS DOM Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перевірка введення</title>
     <link rel="stylesheet" href="second_page.css">
+    <!-- Підключення стилів -->
     <script defer src="script.js"></script>
+    <!-- Підключення JavaScript -->
 </head>
 
 <body>
 
-    <h1>Головний заголовок</h1>
+    <div class="container">
+        <h1>Форма авторизації</h1>
 
-    <h2>Підзаголовок 1</h2>
-    <p>Це перший параграф.</p>
+        <!-- Форма для введення даних -->
+        <form id="authForm">
+            <label for="login">Логін:</label>
+            <input type="text" id="login" name="login" placeholder="Введіть логін" required>
+            <br>
 
-    <h2>Підзаголовок 2</h2>
-    <p>Це другий параграф.</p>
-    <p>Це третій параграф.</p>
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" placeholder="Введіть email" required>
+            <br>
 
-    <button id="startBtn">Змінити колір фону</button>
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введіть телефон" required>
+            <br>
 
-    <div class="gallery-images"></div>
+            <button type="submit">Перевірити</button>
+        </form>
+
+        <!-- Результати перевірки -->
+        <div id="result">
+            <h2>Результати перевірки:</h2>
+            <p id="loginResult"></p>
+            <p id="emailResult"></p>
+            <p id="phoneResult"></p>
+        </div>
+    </div>
 
 </body>
 
